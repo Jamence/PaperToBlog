@@ -118,14 +118,15 @@ def extract_archive(file_path, dest_dir):
     else:
         return ""
     return ""
-file_path="D://2_Myself//project//PaperToBlog//arxiv_save_dir//arXiv-2103.00020v1.tar.gz"
-dest_dir="D://2_Myself//project//PaperToBlog//arxiv_save_dir//arXiv-2103.00020v1//"
-# print(file_path, dest_dir)
-# extract_archive(file_path=file_path, dest_dir=dest_dir)
+
+file_path="D://2_Myself//project//PaperToBlog//arxiv_save_dir//arXiv-2411.14405v2.tar.gz"
+dest_dir="D://2_Myself//project//PaperToBlog//arxiv_save_dir//arXiv-2411.14405v2//"
+print(file_path, dest_dir)
+extract_archive(file_path=file_path, dest_dir=dest_dir)
 
 
 # <-------------- step2. 寻找主tex文件------------->
-txt, arxiv_id = "D://2_Myself//project//PaperToBlog//arxiv_save_dir//arXiv-2103.00020v1//", "2103.00020"
+txt, arxiv_id = "D://2_Myself//project//PaperToBlog//arxiv_save_dir//arXiv-2411.14405v2//", "2411.14405"
 project_folder = txt
 file_manifest = [f for f in glob.glob(f'{project_folder}/**/*.tex', recursive=True)]
 mode = 'proofread'
