@@ -1,4 +1,4 @@
-from read_paper.deepseek import ds_client
+from arxiv_save_dir.deepseek import ds_client
 
 class LLM:
     def __init__(self):
